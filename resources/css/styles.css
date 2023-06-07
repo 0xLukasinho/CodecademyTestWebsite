@@ -3,6 +3,12 @@ html {
     font-size: 18px;
 }
 
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 * {
     font-family: 'Roboto Slab', serif;
     color: #2c0b00;
@@ -20,6 +26,11 @@ h1 {
 p {
     font-size: 1.125rem;
 }
+
+a {
+    text-decoration: none;
+}
+ 
 /* Header */
 
 header {
@@ -122,26 +133,28 @@ header li:active {
 
 .coffee-text {
     align-self: flex-start;
+    width: 70%;
 }
 
 #img-coffee {
     align-self: center;
-    max-width: 200px;
-    max-height: 200px;
+    width: 250px;
     margin: 10px 20px;
 }
 
 @media only screen and (max-width: 600px) {
     .coffee {
         flex-wrap: wrap;
+        justify-content: center;
     }
     
     .coffee-container {
         text-align: center;
     }
 
-    .coffee {
-        justify-content: center;
+    #image-coffee {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -191,13 +204,11 @@ header li:active {
 
 .contact-section {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    width: 85%;
+    margin: 40px auto 60px auto;
 }
 
 .contact-container {
-    width: 85%;
-    margin: 10px auto;
     background-color: rgb(255, 234, 224);
     display: flex;
     flex-direction: row;
@@ -207,14 +218,12 @@ header li:active {
 }
 
 .contact {
-    max-width: 600px;
-    align-self: center;
+    width: 60%;
 }
 
 #img-contact {
-    max-width: 400px;
-    min-width: 200px;
-    flex-shrink: 1;
+    width: 35%;
+    object-fit: contain;
 }
 
 #contact-button {
@@ -244,8 +253,6 @@ footer {
 }
 
 /* To-do
-- scale image: Why doesn't it shrink?
-- set ankers for navigation
 - how to recognize mobile devices and make text etc. a bit bigger
 - buttons: transition more natural
 - header ul: make the text all big
