@@ -69,6 +69,7 @@ header li {
     margin: 0px 20px;
     font-size: 1.5rem;
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 header li:hover {
@@ -80,14 +81,14 @@ header li:active {
     text-shadow: black;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     header li {
         font-size: 1.25rem;
         margin: 5px;
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 810px) {
     header ul {
         display: none;
     }
@@ -241,11 +242,13 @@ header li:active {
     background-color: transparent;
     color: #2c0b00;
     text-decoration: underline;
+    transition: all 0.4s;
 }
 
 #contact-button:active {
     background-color: #972600;
     text-decoration: underline;
+    transition: all 0.4s;
 }
 
 footer {
@@ -254,5 +257,3 @@ footer {
 
 /* To-do
 - how to recognize mobile devices and make text etc. a bit bigger
-- buttons: transition more natural
-- header ul: make the text all big
