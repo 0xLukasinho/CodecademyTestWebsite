@@ -9,14 +9,27 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <img src="resources/images/logo.png" id="logo" />
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#coffee-link">Coffee</a></li>
-                <li><a href="#farmers-link">Farmers</a></li>
-                <li><a href="#orders">Order</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#coffee-link" class="nav-link">Coffee</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#farmers-links" class="nav-link">Farmers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#orders" class="nav-link">Order</a>
+                </li>
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
     </header>
     <div class="title-container" id="home">
@@ -76,7 +89,7 @@
         </div>
         <div class="farmers">
             <img src="resources/images/Farmers/SimonSanchez.jpg" id="img-farmer" alt="Simon Sanchez" />
-            <h3>Simon Sanchez 
+            <h3>Simon Sanchez</h3>
             <h4>Sierra Nevada</h4>
         </div>
         </div>
@@ -85,14 +98,15 @@
         <div class="contact-container">
         <div class="contact">
         <h1>Contact</h1>
-        <p>We deliver our excellent coffee to restaurant, coffee shops and department stores focused on selling high quality organic foods. If you're interested in offering our coffee, please don't hesistate to contact us.</p>
-        <button id="contact-button">CONTACT US!</button>
+        <p class="contact-element">We deliver our excellent coffee to restaurant, coffee shops and department stores focused on selling high quality organic foods. If you're interested in offering our coffee, please don't hesistate to contact us.</p>
+        <button id="contact-button" class="contact-element">CONTACT US!</button>
         </div>
-        <img src="resources/images/CoffeeBeans.jpg" id="img-contact" alt="coffee"/>
+        <img src="resources/images/CoffeeBeans.jpg" id="img-contact" alt="coffee" class="contact-element"/>
         </div>
     </div>
     <footer>
         <p>Copyright 2023 by ColCoffee Ltd.</p>
     </footer>
+    <script src="./resources/scripts/script.js"></script>
 </body>
 </html>
